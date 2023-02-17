@@ -31,6 +31,9 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+// Client
+$routes->get('login_client', 'Client::loginForm');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
